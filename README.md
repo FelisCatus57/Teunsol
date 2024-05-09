@@ -1,36 +1,27 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# [Teunsol International](https://www.teunsol.co.kr/) &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/FelisCatus57/teunsol-site/blob/main/LICENSE)
 
-## Getting Started
 
-First, run the development server:
+* **풍부한 경험:** TSI의 관리자들은 모두 10년 이상의 경력을 기반으로 풍부한 지식과 경험을 가지고 있습니다.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+* **효율적인 관리**: 효율적인 관리 와 예상치 못한 문제를 해결할 수 있는 많은 방법들을 가지고 있습니다.  
+<br><br>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 팀원소개 
+|PM 김재호|FE 김민수|BE 박준걸|BE 전성환|
+|:---:|:---:|:---:|:---:|
+|<img alt="김재호프로필" src="https://avatars.githubusercontent.com/u/153428925?v=4" width="200" height="200">|<img width="200" height="200" alt="김민수프로필" src="https://avatars.githubusercontent.com/u/129649787?v=4">|<img width="200" height="200" alt="박준걸프로필" src="https://avatars.githubusercontent.com/u/116718062?v=4">|<img width="200" height="200" alt="전성환프로필" src="https://avatars.githubusercontent.com/u/79620128?v=4">|
+|- Project Manager<br> - BackEnd | - Disignin<br> - FrontEnd | - Server<br> - BackEnd | - Seucurity<br> - BackEnd |
+| <img alt="팀 리더" src="https://img.shields.io/badge/Team%20Leader-red"> | <img alt="프론트엔드" src="https://img.shields.io/badge/FrontEnd-yellow"> | <img alt="백엔드" src="https://img.shields.io/badge/BackEnd-brightgreen"> | <img alt="백엔드" src="https://img.shields.io/badge/BackEnd-brightgreen"> |
+|[🔗GitHub](https://github.com/scorve12)|[🔗GitHub](https://github.com/computerkingminsu)|[🔗GitHub](https://github.com/jxxn92)|[🔗GitHub](https://github.com/areono)|
+<br><br>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 개발환경 및 기술스택
+> **FrontEnd**<br> <img alt="아이콘" src="https://skillicons.dev/icons?i=typescript,react,nextjs"><br>
+> **BackEnd**<br> <img src="https://skillicons.dev/icons?i=vercel,"><br>
+> **Comunication**<br> <img src="https://skillicons.dev/icons?i=github,"><br>     
+        
+        
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### License
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This Repository is [MIT licensed](./LICENSE).
