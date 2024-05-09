@@ -13,6 +13,7 @@
 |- Project Manager<br> - BackEnd | - Disignin<br> - FrontEnd | - Server<br> - BackEnd | - Seucurity<br> - BackEnd |
 | <img alt="팀 리더" src="https://img.shields.io/badge/Team%20Leader-red"> | <img alt="프론트엔드" src="https://img.shields.io/badge/FrontEnd-yellow"> | <img alt="백엔드" src="https://img.shields.io/badge/BackEnd-brightgreen"> | <img alt="백엔드" src="https://img.shields.io/badge/BackEnd-brightgreen"> |
 |[🔗GitHub](https://github.com/scorve12)|[🔗GitHub](https://github.com/computerkingminsu)|[🔗GitHub](https://github.com/jxxn92)|[🔗GitHub](https://github.com/areono)|
+
 <br><br>
 
 ## 개발환경 및 기술스택
