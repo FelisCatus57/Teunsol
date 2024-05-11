@@ -5,7 +5,7 @@ import TransLocale from '@/components/main/header/transLocale';
 import Navbar from '@/components/main/header/navbar';
 import Image from 'next/image';
 import BackgroundImage from '@/components/main/backgroundImage';
-
+ 
 export default function Home() {
   const t = useTranslations('Header');
 
