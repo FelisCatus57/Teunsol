@@ -1,8 +1,17 @@
 {
-  "Header": {
+  "MainHeader": {
     "Nav1": "튼솔",
     "Nav2": "지속가능경영",
     "Nav3": "투자정보",
-    "Nav4": "채용정보"
+    "Nav4": "채용정보",
+    "bannerText1": "우리는 지속가능한 성장을 추구합니다. 세상을 이어주는 우리",
+    "bannerText2": "그 중심에 튼솔이 있습니다.",
+    "bannerText3": "TEUNSOL IS THE CENTER OF PROGRESS."
+  },
+  "MainBodyContents1": {
+    "Text1": "숫자로 보는",
+    "Text2": "튼솔",
+    "Text3": "예시문구1",
+    "Text4": "예시문구2"
   }
 }
