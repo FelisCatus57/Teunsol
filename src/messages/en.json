@@ -1,5 +1,8 @@
 {
-  "Index": {
-    "title": "Hello world!"
+  "Header": {
+    "Nav1": "TeunSol",
+    "Nav2": "Management",
+    "Nav3": "Investment",
+    "Nav4": "Recruitment"
   }
 }
