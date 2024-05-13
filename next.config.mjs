@@ -2,6 +2,8 @@ import createNextIntlPlugin from 'next-intl/plugin';
 
 const withNextIntl = createNextIntlPlugin();
 
+dotenv.config({ path: '.env.local' });//설정
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   webpack: (config) => {
@@ -16,8 +18,8 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'www.teunsol.co.kr', // 실제 사용할 도메인
-        pathname: '/**', // 경로 패턴
+        hostname: 'www.teunsol.co.kr', // 실제 도메인
+        pathname: `${process.env.NEXT_PUBLIC_IMGURL}/**`,
       },
     ],
   },
