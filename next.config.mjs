@@ -12,11 +12,18 @@ const nextConfig = {
 
     return config;
   },
-  reactStrictMode: true,
-  images: {
-    domains: ["teunsol.co.kr/ko", "*"],
-  },
-  reactStrictMode: true,
 };
+module.exports = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'assets.example.com',
+        port: '',
+        pathname: '/account123/**',
+      },
+    ],
+  },
+}
 
 export default withNextIntl(nextConfig);
