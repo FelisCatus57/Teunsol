@@ -12,11 +12,13 @@ const nextConfig = {
 
     return config;
   },
+  reactStrictMode: true,
   images: { //Next.js 이미지경로 설정
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'www.teunsol.co.kr', // 실제 도메인
+        hostname: 'www.teunsol.co.kr', 
+        pathname: '/**',
       },
     ],
   },
