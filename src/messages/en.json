@@ -1,8 +1,12 @@
 {
-  "Header": {
+  "MainHeader": {
     "Nav1": "TeunSol",
     "Nav2": "Management",
     "Nav3": "Investment",
-    "Nav4": "Recruitment"
-  }
+    "Nav4": "Recruitment",
+    "bannerText1": "We seek sustainable growth. We connect the world",
+    "bannerText2": "TeunSol is at the center of it.",
+    "bannerText3": "TEUNSOL IS THE CENTER OF PROGRESS."
+  },
+  "MainBody": {}
 }

@@ -1,37 +1,49 @@
 import React from 'react';
 import { useTranslations } from 'next-intl';
-import Logo from '@/components/main/header/logo';
-import TransLocale from '@/components/main/header/transLocale';
-import Navbar from '@/components/main/header/navbar';
-import Image from 'next/image';
-import BackgroundImage from '@/components/main/backgroundImage';
- 
-export default function Home() {
-  const t = useTranslations('Header');
+import BackgroundImage from '@/components/home/header/backgroundImage';
+import Navbar from '@/components/home/header/navbar';
+import Logo from '@/components/home/header/logo';
+import TransLocale from '@/components/home/header/transLocale';
+import Contents1 from '@/components/home/main/contents1/Contents1';
 
+export default function Home() {
+  const header = useTranslations('MainHeader');
   return (
     <>
       {/* 헤더 */}
       {/* 배경 이미지 */}
       <header className="w-screen  h-[100vh] relative">
-        {/* <Image src="/image/BackGround/메인배경1.jpg" alt="logo" layout="fill" /> */}
-        <BackgroundImage />
+        <BackgroundImage>
+          <div className="absolute inset-0 flex items-center justify-center mb-12 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.5)]">
+            <div className="text-white text-3xl text-center  h-40 flex flex-col justify-between ">
+              <span className="">{header('bannerText1')}</span>
+              <br />
+              <span className="text-6xl mb-4">
+                {header('bannerText2')}
+                <br />
+              </span>
+              <span className="text-lg"> {header('bannerText3')}</span>
+            </div>
+          </div>
+        </BackgroundImage>
         {/* 네비게이션 */}
         <Navbar>
           {/* 로고 */}
           <Logo />
           {/* 네비게이션 메뉴 */}
           <div className="flex w-2/3 justify-between ">
-            <div>{t('Nav1')}</div>
-            <div>{t('Nav2')}</div>
-            <div>{t('Nav3')}</div>
-            <div>{t('Nav4')}</div>
+            <span className="cursor-pointer">{header('Nav1')}</span>
+            <span className="cursor-pointer">{header('Nav2')}</span>
+            <span className="cursor-pointer">{header('Nav3')}</span>
+            <span className="cursor-pointer">{header('Nav4')}</span>
           </div>
           {/* 언어 변경 */}
           <TransLocale />
         </Navbar>
       </header>
-      <div className="h-96">asdsad</div>
+      <main>
+        <Contents1 />
+      </main>
     </>
   );
 }

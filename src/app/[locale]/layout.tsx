@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { Noto_Sans_KR, Noto_Sans_JP } from 'next/font/google';
+import { NextIntlClientProvider } from 'next-intl';
+import { notFound } from 'next/navigation';
 
 const notoSansKr = Noto_Sans_KR({
   weight: ['500'],
@@ -14,10 +16,14 @@ const notoSansJp = Noto_Sans_JP({
 
 export const metadata: Metadata = {
   title: 'Teunsol International',
-  description: 'Global Project Managemen',
+  description: 'Global Project Management',
+  openGraph: {
+    title: 'Teunsol International',
+    description: 'Global Project Management',
+  },
 };
 
-export default function LocaleLayout({
+export default async function LocaleLayout({
   children,
   params: { locale },
 }: {
@@ -29,9 +35,21 @@ export default function LocaleLayout({
   if (locale === 'jp') {
     fontClass = notoSansJp.className;
   }
+
+  let messages;
+  try {
+    messages = (await import(`../../messages/${locale}.json`)).default;
+  } catch (error) {
+    console.error('Failed to load messages:', error);
+    notFound();
+  }
   return (
     <html lang={locale}>
-      <body className={fontClass}>{children}</body>
+      <body className={fontClass}>
+        <NextIntlClientProvider locale={locale} messages={messages}>
+          {children}
+        </NextIntlClientProvider>
+      </body>
     </html>
   );
 }

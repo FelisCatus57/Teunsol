@@ -15,7 +15,7 @@ export default function TransLocale() {
             Eng
           </Link>
         ) : (
-          <Link className="absolute right-10 cursor-pointer" href="/ko">
+          <Link className="absolute right-10 cursor-pointer " href="/ko">
             한국어
           </Link>
         )}
