@@ -7,9 +7,9 @@ export default function BackgroundImage({ children }: { children: React.ReactNod
   const [nextImage, setNextImage] = useState(1);
   const [opacity, setOpacity] = useState(1); // 이제 한 개의 opacity만 사용하여 전환을 관리합니다.
   const images = [
-    '${process.env.NEXT_PUBLIC_IMG_PATH}/BackGround/메인배경1.jpg',
-    '${process.env.NEXT_PUBLIC_IMG_PATH}/BackGround/메인배경2.jpg',
-    '${process.env.NEXT_PUBLIC_IMG_PATH}/BackGround/메인배경3.jpg',
+    '${process.env.NEXT_PUBLIC_IMG_PATH}/메인배경1.jpg',
+    '${process.env.NEXT_PUBLIC_IMG_PATH}/메인배경2.jpg',
+    '${process.env.NEXT_PUBLIC_IMG_PATH}/메인배경3.jpg',
   ];
 
   useEffect(() => {
