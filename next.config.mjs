@@ -1,4 +1,5 @@
 import createNextIntlPlugin from 'next-intl/plugin';
+import 'dotenv/config';
 
 const withNextIntl = createNextIntlPlugin();
 
@@ -19,7 +20,6 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: 'www.teunsol.co.kr', // 실제 도메인
-        pathname: `${process.env.NEXT_PUBLIC_IMGURL}/**`,
       },
     ],
   },
