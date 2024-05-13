@@ -2,18 +2,15 @@
 
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
-import mainBackGound1 from '../../../../public/Image/BackGround/메인배경1.jpg'
-import mainBackGound2 from '../../../../public/Image/BackGround/메인배경2.jpg'
-import mainBackGound3 from '../../../../public/Image/BackGround/메인배경3.jpg'
 
 export default function BackgroundImage({ children }: { children: React.ReactNode }) {
   const [currentImage, setCurrentImage] = useState(0);
   const [nextImage, setNextImage] = useState(1);
   const [opacity, setOpacity] = useState(1); // 이제 한 개의 opacity만 사용하여 전환을 관리합니다.
   const images = [
-    mainBackGound1,
-    mainBackGound2,
-    mainBackGound3,
+    '/Image/BackGround/메인배경1.jpg',
+    '/Image/BackGround/메인배경2.jpg',
+    '/Image/BackGround/메인배경3.jpg',
   ];
 
   useEffect(() => {
