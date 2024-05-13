@@ -1,9 +1,6 @@
 import createNextIntlPlugin from 'next-intl/plugin';
-import 'dotenv/config';
 
 const withNextIntl = createNextIntlPlugin();
-
-dotenv.config({ path: '.env.local' });//설정
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
