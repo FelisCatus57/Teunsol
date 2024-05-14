@@ -9,7 +9,11 @@ export default getRequestConfig(async ({ locale }) => {
   if (!locales.includes(locale as any)) notFound();
 
   // 위치 확인
-  return {
-    messages: (await import(`./messages/${locale}.json`)).default,
-  };
+  try {
+    const messages = (await import(`./messages/${locale}.json`)).default;
+    return { messages };
+  } catch (error) {
+    console.error(`Failed to load messages for locale ${locale}:`, error);
+    notFound(); // 또는 다른 에러 처리 방식을 사용할 수 있습니다.
+  }
 });

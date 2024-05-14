@@ -5,7 +5,9 @@
     "Nav3": "투자정보",
     "Nav4": "채용정보",
     "bannerText1": "우리는 지속가능한 성장을 추구합니다. 세상을 이어주는 우리",
-    "bannerText2": "그 중심에 튼솔이 있습니다.",
+    "bannerText2-1": "그 중심에 ",
+    "bannerText2-2": "튼솔",
+    "bannerText2-3": "이 있습니다.",
     "bannerText3": "TEUNSOL IS THE CENTER OF PROGRESS."
   },
   "MainBodyContents1": {
@@ -13,5 +15,11 @@
     "Text2": "튼솔",
     "Text3": "예시문구1",
     "Text4": "예시문구2"
+  },
+  "MainBodyContents2": {
+    "Text1": "삶의 가치를 높이는 기업, 튼솔이 언제, 어디서나 함께하고 있습니다."
+  },
+  "MainBodyContents3": {
+    "Text1": "고객이 주신 사랑, 최고의 품질로 보답하겠습니다."
   }
 }
