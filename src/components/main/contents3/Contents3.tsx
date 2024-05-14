@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import React from 'react';
 import Text1 from './text/text1';
 
@@ -9,7 +8,7 @@ export default function Contents3() {
         <span className="text-4xl text-black mb-7 text-semibold">
           ABOUT TEUNSOL
         </span>
-        <span className="text-xl gray-700">
+        <span className="text-xl text-gray-500">
           <Text1 />
         </span>
       </section>
