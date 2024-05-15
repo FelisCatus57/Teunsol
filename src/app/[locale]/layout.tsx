@@ -3,6 +3,8 @@ import './globals.css';
 import { Noto_Sans_KR, Noto_Sans_JP } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
 import { notFound } from 'next/navigation';
+import LayoutFooter from '@/components/layout/footer/LayoutFooter';
+import LayoutHeader from '@/components/layout/header/LayoutHeader';
 
 const notoSansKr = Noto_Sans_KR({
   weight: ['500'],
@@ -47,7 +49,9 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <body className={fontClass}>
         <NextIntlClientProvider locale={locale} messages={messages}>
+          <LayoutHeader />
           {children}
+          <LayoutFooter />
         </NextIntlClientProvider>
       </body>
     </html>

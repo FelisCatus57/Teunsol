@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 
 import Image from 'next/image';
 import LeftText1 from './text/lefttext1';
@@ -9,34 +9,62 @@ import LeftText3 from './text/lefttext3';
 
 export default function Contents1() {
   const [count, setCount] = useState(0);
-  const [isScrolled, setIsScrolled] = useState(false);
+  const [isIntersecting, setIsIntersecting] = useState(false);
+  const leftSectionRef = useRef(null);
+  const rightSectionRef = useRef(null);
 
-  // 스크롤 이벤트 핸들러와 스크롤 위치 확인
   useEffect(() => {
-    const handleScroll = () => {
-      const scrolled = window.scrollY > 400;
-      setIsScrolled(scrolled);
-    };
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setIsIntersecting(true);
+          } else {
+            setIsIntersecting(false);
+          }
+        });
+      },
+      {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.5,
+      },
+    );
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    if (leftSectionRef.current) {
+      observer.observe(leftSectionRef.current);
+    }
+    if (rightSectionRef.current) {
+      observer.observe(rightSectionRef.current);
+    }
+
+    return () => {
+      if (leftSectionRef.current) {
+        observer.unobserve(leftSectionRef.current);
+      }
+      if (rightSectionRef.current) {
+        observer.unobserve(rightSectionRef.current);
+      }
+    };
   }, []);
 
-  // isScrolled가 true일 때 숫자 증가 로직
   useEffect(() => {
     let timer: NodeJS.Timeout;
-    if (isScrolled && count < 120) {
+    if (isIntersecting && count < 120) {
       timer = setTimeout(() => setCount(count + 1), 1000 / 120);
     }
     return () => clearTimeout(timer);
-  }, [count, isScrolled]);
+  }, [count, isIntersecting]);
 
   return (
     <section className="h-[41.75rem] flex">
       {/* 왼쪽 컨텐츠 */}
-      <article className="relative flex flex-col items-center justify-center w-1/2 h-full pb-16">
+      <div
+        ref={leftSectionRef}
+        className="relative flex flex-col items-center justify-center w-1/2 h-full pb-16"
+      >
         <Image
-          src="/image/mainbody/contents1/img1.jpg"
+          src="/image/home/contents1/img1.jpg"
           alt="contents1"
           layout="fill"
           objectFit="cover"
@@ -55,28 +83,31 @@ export default function Contents1() {
             </div>
           </div>
         </div>
-      </article>
+      </div>
       {/* 오른쪽 컨텐츠 */}
-      <article className="relative flex flex-col items-center justify-center w-1/2 h-full overflow-hidden">
+      <div
+        ref={rightSectionRef}
+        className="relative flex flex-col items-center justify-center w-1/2 h-full overflow-hidden"
+      >
         <Image
-          src="/image/mainbody/contents1/img2.jpg"
+          src="/image/home/contents1/img2.jpg"
           alt="contents1"
           layout="fill"
           objectFit="cover"
         />
         <header className="w-full h-1/3 flex justify-center items-center text-5xl text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
           Business
-        </header>{' '}
+        </header>
         <div
           className={`w-full h-[45%] relative transition-all duration-700 ease-out transform ${
-            isScrolled
+            isIntersecting
               ? 'opacity-100 translate-y-0'
               : 'opacity-0 translate-y-10'
           }`}
         >
           <div className="relative w-full h-full transition-transform duration-500 ease-in-out hover:scale-110">
             <Image
-              src="/image/mainbody/contents1/img3.jpg"
+              src="/image/home/contents1/img3.jpg"
               alt="contents1"
               layout="fill"
               objectFit="cover"
@@ -85,12 +116,14 @@ export default function Contents1() {
         </div>
         <footer
           className={`w-full h-[22%] flex justify-center items-center text-3xl bg-white text-gray-600 transition-opacity duration-700 ease-out transform ${
-            isScrolled ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+            isIntersecting
+              ? 'opacity-100 translate-y-0'
+              : 'opacity-0 translate-y-8'
           }`}
         >
           <span>Steel</span>
         </footer>
-      </article>
+      </div>
     </section>
   );
 }

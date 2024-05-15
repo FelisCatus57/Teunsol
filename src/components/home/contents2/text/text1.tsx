@@ -6,7 +6,9 @@ export default function Text1(): JSX.Element {
 
   return (
     <>
-      <span className="text-2xl">{body('Text1')}</span>
+      <span className="text-2xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+        {body('Text1')}
+      </span>
     </>
   );
 }

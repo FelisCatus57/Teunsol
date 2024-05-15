@@ -1,5 +1,5 @@
 {
-  "MainHeader": {
+  "Header": {
     "Nav1": "튼솔",
     "Nav2": "지속가능경영",
     "Nav3": "투자정보",
@@ -9,6 +9,10 @@
     "bannerText2-2": "튼솔",
     "bannerText2-3": "이 있습니다.",
     "bannerText3": "TEUNSOL IS THE CENTER OF PROGRESS."
+  },
+  "Footer": {
+    "Text1": "개인정보취급방침 | 이메일무단수집거부 | CONTACT US | B2B | 원료 | SCM",
+    "Text2": "광주광역시 어딘지 모르는 곳 777번길 12 TEL : 777-777-7777 FAX : 777-777-7777"
   },
   "MainBodyContents1": {
     "Text1": "숫자로 보는",
@@ -21,5 +25,14 @@
   },
   "MainBodyContents3": {
     "Text1": "고객이 주신 사랑, 최고의 품질로 보답하겠습니다."
+  },
+  "MainBodyContents4": {
+    "Text1": "투자정보",
+    "Text2": "경영이념",
+    "Text3": "Teunsol 네트워크"
+  },
+  "MainBodyContents6": {
+    "Text1": "고객센터",
+    "Text2": "고객의 원할한 업무진행을 위해 최선을 다하겠습니다."
   }
 }
