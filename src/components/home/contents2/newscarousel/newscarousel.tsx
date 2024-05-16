@@ -47,7 +47,7 @@ export default function NewsCarousel(): JSX.Element {
           <div className=" h-[25.063rem]  flex flex-col cursor-pointer  ">
             <div className="relative w-full mb-4 h-[7.5rem]">
               <Image
-                src="/image/home/contents2/img1.jpg"
+                src="/Image/home/contents2/img1.jpg"
                 alt="news"
                 layout="fill"
                 objectFit="cover"
