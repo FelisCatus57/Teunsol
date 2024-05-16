@@ -46,7 +46,7 @@ export default function Contents4() {
         <div className="w-1/3 flex justify-center items-center relative overflow-hidden">
           <div className="absolute w-full h-full transition-transform duration-500 ease-in-out hover:scale-110">
             <Image
-              src="/Image/home/contents4/img1.jpg"
+              src="/image/home/contents4/img1.jpg"
               alt="img1"
               layout="fill"
               objectFit="cover"
@@ -59,7 +59,7 @@ export default function Contents4() {
         <div className="w-1/3 flex justify-center items-center relative overflow-hidden">
           <div className="absolute w-full h-full transition-transform duration-500 ease-in-out hover:scale-110">
             <Image
-              src="/Image/home/contents4/img2.jpg"
+              src="/image/home/contents4/img2.jpg"
               alt="img2"
               layout="fill"
               objectFit="cover"
@@ -72,7 +72,7 @@ export default function Contents4() {
         <div className="w-1/3 flex justify-center items-center relative overflow-hidden">
           <div className="absolute w-full h-full transition-transform duration-500 ease-in-out hover:scale-110">
             <Image
-              src="/Image/home/contents4/img3.jpg"
+              src="/image/home/contents4/img3.jpg"
               alt="img3"
               layout="fill"
               objectFit="cover"

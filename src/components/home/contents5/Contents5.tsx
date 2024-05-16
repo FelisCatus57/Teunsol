@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../../../../public/Image/SVG/Logo1.svg';
+import Logo from '../../../../public/image/SVG/Logo1.svg';
 export default function Contents5() {
   return (
     <>

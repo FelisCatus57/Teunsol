@@ -64,7 +64,7 @@ export default function Contents1() {
         className="relative flex flex-col items-center justify-center w-1/2 h-full pb-16"
       >
         <Image
-          src="/Image/home/contents1/img1.jpg"
+          src="/image/home/contents1/img1.jpg"
           alt="contents1"
           layout="fill"
           objectFit="cover"
@@ -90,7 +90,7 @@ export default function Contents1() {
         className="relative flex flex-col items-center justify-center w-1/2 h-full overflow-hidden"
       >
         <Image
-          src="/Image/home/contents1/img2.jpg"
+          src="/image/home/contents1/img2.jpg"
           alt="contents1"
           layout="fill"
           objectFit="cover"
@@ -107,7 +107,7 @@ export default function Contents1() {
         >
           <div className="relative w-full h-full transition-transform duration-500 ease-in-out hover:scale-110">
             <Image
-              src="/Image/home/contents1/img3.jpg"
+              src="/image/home/contents1/img3.jpg"
               alt="contents1"
               layout="fill"
               objectFit="cover"

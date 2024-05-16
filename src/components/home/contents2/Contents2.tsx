@@ -8,7 +8,7 @@ export default function Contents2() {
     <>
       <section className="h-[47.75rem] w-screen flex justify-center items-center relative">
         <Image
-          src="/Image/home/contents2/img1.jpg"
+          src="/image/home/contents2/img1.jpg"
           alt="contents1"
           layout="fill"
           objectFit="cover"

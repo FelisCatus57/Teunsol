@@ -9,7 +9,7 @@ export default function Contents6() {
       <section className="h-[23.75rem] w-screen flex justify-center items-center flex-col relative group overflow-hidden">
         <div className="absolute w-full h-full transition-transform duration-1000 ease-in-out group-hover:scale-110">
           <Image
-            src="/Image/home/contents6/img1.jpg"
+            src="/image/home/contents6/img1.jpg"
             alt="contents6"
             layout="fill"
             objectFit="cover"
