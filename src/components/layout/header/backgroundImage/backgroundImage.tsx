@@ -2,16 +2,23 @@
 
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
+
 export default function BackgroundImage({ children }: { children: React.ReactNode }) {
   const [currentImage, setCurrentImage] = useState(0);
   const [nextImage, setNextImage] = useState(1);
   const [opacity, setOpacity] = useState(1); // 이제 한 개의 opacity만 사용하여 전환을 관리합니다.
   const images = [
+<<<<<<< HEAD:src/components/layout/header/backgroundImage/backgroundImage.tsx
     '/image/BackGround/메인배경1.jpg',
     '/image/BackGround/메인배경2.jpg',
     '/image/BackGround/메인배경3.jpg',
+=======
+    '/Image/BackGround/메인배경1.jpg',
+    '/Image/BackGround/메인배경2.jpg',
+    '/Image/BackGround/메인배경3.jpg',
+>>>>>>> e625b140d311a009887b45c4e2e893ce75723929:src/components/home/header/backgroundImage.tsx
   ];
-  console.log(images);
+
   useEffect(() => {
     const intervalId = setInterval(() => {
       // 시작할 때 현재 이미지를 페이드 아웃시키고

@@ -8,5 +8,10 @@
     "bannerText2": "TeunSol is at the center of it.",
     "bannerText3": "TEUNSOL IS THE CENTER OF PROGRESS."
   },
-  "MainBody": {}
+  "MainBodyContents1": {
+    "Text1": "by numbers",
+    "Text2": "TeunSol",
+    "Text3": "예시문구1",
+    "Text4": "예시문구2"
+  }
 }

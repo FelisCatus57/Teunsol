@@ -1,4 +1,7 @@
 import createNextIntlPlugin from 'next-intl/plugin';
+import dotenv from 'dotenv';
+
+dotenv.config(); // 환경 변수 로드
 
 const withNextIntl = createNextIntlPlugin();
 
@@ -12,6 +15,17 @@ const nextConfig = {
 
     return config;
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'www.teunsol.co.kr',
+        port: '3000',
+        pathname: '/**',
+      },
+    ],
+  },
 };
+
 
 export default withNextIntl(nextConfig);
