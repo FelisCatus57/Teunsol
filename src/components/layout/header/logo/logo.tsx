@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import BlackKlogo from '../../../../../public/image/svg/NonCC(all).svg';
+import BlackKlogo from '../../../../../public/image/svg/NonCC(all).svg';//NonCC(all).svg
 import BlackElogo from '../../../../../public/image/svg/NonCC(en).svg';
 import WhiteKlogo from '../../../../../public/image/svg/WTCC(all).svg';
 import WhiteElogo from '../../../../../public/image/svg/WTCC(en).svg';
