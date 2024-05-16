@@ -13,11 +13,7 @@ export default getRequestConfig(async ({ locale }) => {
     const messages = (await import(`./messages/${locale}.json`)).default;
     return { messages };
   } catch (error) {
-<<<<<<< HEAD
-    console.error(`Failed to load messages for locale ${locale}:`, error);
-=======
     console.error(`Failed to load messages for locale (kim)${locale}:`, error);
->>>>>>> e625b140d311a009887b45c4e2e893ce75723929
     notFound(); // 또는 다른 에러 처리 방식을 사용할 수 있습니다.
   }
 });
