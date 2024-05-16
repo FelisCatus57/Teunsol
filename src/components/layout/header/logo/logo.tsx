@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import BlackKlogo from '../../../../../public/Image/SVG/NonCC(all).svg';
-import BlackElogo from '../../../../../public/Image/SVG/NonCC(EN).svg';
+import BlackElogo from '../../../../../public/Image/SVG/NonCC(en).svg';
 import WhiteKlogo from '../../../../../public/Image/SVG/WTCC(all).svg';
 import WhiteElogo from '../../../../../public/Image/SVG/WTCC(en).svg';
 import { useParams } from 'next/navigation';
