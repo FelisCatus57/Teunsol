@@ -3,9 +3,9 @@
 import React, { useEffect, useState } from 'react';
 
 import Image from 'next/image';
-import LeftText1 from './text/lefttext1';
-import LeftText2 from './text/lefttext2';
-import LeftText3 from './text/lefttext3';
+import LeftText1 from '../../contents1/text/lefttext1';
+import LeftText2 from '../../contents1/text/lefttext1';
+import LeftText3 from '../../contents1/text/lefttext1';
 
 export default function Contents1() {
   const [count, setCount] = useState(0);
