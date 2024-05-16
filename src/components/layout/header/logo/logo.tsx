@@ -1,10 +1,10 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import BlackKlogo from '../../../../../public/image/SVG/NonCC(all).svg';
-import BlackElogo from '../../../../../public/image/SVG/NonCC(en).svg';
-import WhiteKlogo from '../../../../../public/image/SVG/WTCC(all).svg';
-import WhiteElogo from '../../../../../public/image/SVG/WTCC(en).svg';
+import BlackKlogo from '../../../../../public/image/svg/NonCC(all).svg';
+import BlackElogo from '../../../../../public/image/svg/NonCC(en).svg';
+import WhiteKlogo from '../../../../../public/image/svg/WTCC(all).svg';
+import WhiteElogo from '../../../../../public/image/svg/WTCC(en).svg';
 import { useParams } from 'next/navigation';
 
 export default function Logo() {
