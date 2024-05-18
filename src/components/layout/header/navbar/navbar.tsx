@@ -17,7 +17,7 @@ export default function Navbar({ children }: { children: React.ReactNode }) {
   return (
     <>
       <nav
-        className={`w-screen fixed top-0 flex justify-center items-center h-20 px-64 transition-all duration-300 ease-in-out text-lg ${
+        className={`h-16 md:h-20 w-screen fixed top-0 flex justify-center items-center transition-all duration-300 ease-in-out text-lg ${
           isScrolled
             ? 'bg-white text-black shadow-lg'
             : 'bg-black bg-opacity-15 text-white '

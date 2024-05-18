@@ -6,7 +6,9 @@ export default function LeftText3(): JSX.Element {
 
   return (
     <>
-      <span className="text-2xl text-gray-200 mt-4 "> {body('Text4')}</span>
+      <span className="text-lg lg:text-2xl text-gray-200 mt-4 ">
+        {body('Text4')}
+      </span>
     </>
   );
 }
