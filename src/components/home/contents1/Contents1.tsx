@@ -57,11 +57,11 @@ export default function Contents1() {
   }, [count, isIntersecting]);
 
   return (
-    <section className="h-[41.75rem] flex">
+    <section className="h-[41.75rem] flex flex-col lg:flex-row">
       {/* 왼쪽 컨텐츠 */}
       <div
         ref={leftSectionRef}
-        className="relative flex flex-col items-center justify-center w-1/2 h-full pb-16"
+        className="relative flex flex-col items-center justify-center w-full h-1/2 lg:h-full lg:w-1/2 lg:pb-16"
       >
         <Image
           src="/image/home/contents1/img1.jpg"
@@ -69,16 +69,18 @@ export default function Contents1() {
           layout="fill"
           objectFit="cover"
         />
-        <div className="absolute flex flex-col justify-center items-center w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
-          <header className="mb-24 text-5xl text-white">TeunSol</header>
+        <div className=" absolute flex flex-col justify-center items-center w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+          <header className="lg:mb-24 text-3xl lg:text-5xl text-white">
+            TeunSol
+          </header>
           <LeftText1 />
           <div className="flex justify-between w-3/6">
             <div className="flex flex-col items-center justify-center">
-              <span className="text-6xl text-white ">{count}</span>
+              <span className="text-4xl lg:text-6xl text-white ">{count}</span>
               <LeftText2 />
             </div>
             <div className="flex flex-col items-center justify-center">
-              <span className="text-6xl text-white ">{count}</span>
+              <span className="text-4xl lg:text-6xl text-white ">{count}</span>
               <LeftText3 />
             </div>
           </div>
@@ -87,7 +89,7 @@ export default function Contents1() {
       {/* 오른쪽 컨텐츠 */}
       <div
         ref={rightSectionRef}
-        className="relative flex flex-col items-center justify-center w-1/2 h-full overflow-hidden"
+        className="relative flex flex-col items-center justify-center w-full lg:w-1/2  h-1/2 lg:h-full overflow-hidden"
       >
         <Image
           src="/image/home/contents1/img2.jpg"
@@ -95,7 +97,7 @@ export default function Contents1() {
           layout="fill"
           objectFit="cover"
         />
-        <header className="w-full h-1/3 flex justify-center items-center text-5xl text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+        <header className="w-full h-1/3 flex justify-center items-center text-3xl lg:text-5xl text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
           Business
         </header>
         <div
@@ -115,7 +117,7 @@ export default function Contents1() {
           </div>
         </div>
         <footer
-          className={`w-full h-[22%] flex justify-center items-center text-3xl bg-white text-gray-600 transition-opacity duration-700 ease-out transform ${
+          className={`w-full h-[22%] flex justify-center items-center text-2xl lg:text-3xl bg-white text-gray-600 transition-opacity duration-700 ease-out transform ${
             isIntersecting
               ? 'opacity-100 translate-y-0'
               : 'opacity-0 translate-y-8'

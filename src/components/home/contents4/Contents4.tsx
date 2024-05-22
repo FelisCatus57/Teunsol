@@ -42,8 +42,8 @@ export default function Contents4() {
 
   return (
     <>
-      <section className="h-[23.188rem] w-screen flex bg-slate-300 overflow-hidden">
-        <div className="w-1/3 flex justify-center items-center relative overflow-hidden">
+      <section className="h-[23.188rem] w-screen flex flex-col md:flex-row  overflow-hidden">
+        <div className="w-full h-1/3 md:h-full md:w-1/3 flex justify-center items-center relative overflow-hidden">
           <div className="absolute w-full h-full transition-transform duration-500 ease-in-out hover:scale-110">
             <Image
               src="/image/home/contents4/img1.jpg"
@@ -56,7 +56,7 @@ export default function Contents4() {
             <Text1 />
           </div>
         </div>
-        <div className="w-1/3 flex justify-center items-center relative overflow-hidden">
+        <div className="w-full h-1/3 md:h-full md:w-1/3 flex justify-center items-center relative overflow-hidden">
           <div className="absolute w-full h-full transition-transform duration-500 ease-in-out hover:scale-110">
             <Image
               src="/image/home/contents4/img2.jpg"
@@ -69,7 +69,7 @@ export default function Contents4() {
             <Text2 />
           </div>
         </div>
-        <div className="w-1/3 flex justify-center items-center relative overflow-hidden">
+        <div className="w-full h-1/3 md:h-full  md:w-1/3 flex justify-center items-center relative overflow-hidden">
           <div className="absolute w-full h-full transition-transform duration-500 ease-in-out hover:scale-110">
             <Image
               src="/image/home/contents4/img3.jpg"

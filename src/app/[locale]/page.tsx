@@ -11,6 +11,7 @@ export default function Home() {
   return (
     <>
       {/* 메인 */}
+
       <main>
         <Contents1 />
         <Contents2 />

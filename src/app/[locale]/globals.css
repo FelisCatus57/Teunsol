@@ -8,8 +8,25 @@
 }
 
 body {
-  max-width: 100%;
   overflow-x: hidden;
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 640px) {
+  html {
+    font-size: 12px;
+  }
 }
 
 .title-text-overflow {
@@ -27,6 +44,6 @@ body {
   word-break: break-word;
 
   display: -webkit-box;
-  -webkit-line-clamp: 6;
+  -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
 }

@@ -11,11 +11,17 @@ export default function TransLocale() {
     <>
       <>
         {locale === 'ko' ? (
-          <Link className="absolute right-10 cursor-pointer" href="/en">
+          <Link
+            className="absolute right-20 text-sm md:text-base lg:right-10 cursor-pointer"
+            href="/en"
+          >
             Eng
           </Link>
         ) : (
-          <Link className="absolute right-10 cursor-pointer " href="/ko">
+          <Link
+            className="absolute right-20 text-sm md:text-base lg:right-10 cursor-pointer "
+            href="/ko"
+          >
             한국어
           </Link>
         )}

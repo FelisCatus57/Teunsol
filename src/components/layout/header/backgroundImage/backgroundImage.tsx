@@ -3,7 +3,11 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 
-export default function BackgroundImage({ children }: { children: React.ReactNode }) {
+export default function BackgroundImage({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   const [currentImage, setCurrentImage] = useState(0);
   const [nextImage, setNextImage] = useState(1);
   const [opacity, setOpacity] = useState(1); // 이제 한 개의 opacity만 사용하여 전환을 관리합니다.
@@ -42,8 +46,16 @@ export default function BackgroundImage({ children }: { children: React.ReactNod
 
   return (
     <div className="relative w-full h-full overflow-hidden">
-      <div className="absolute inset-0 transition-opacity duration-1000 " style={{ opacity }}>
-        <Image src={images[currentImage]} alt="Background image" layout="fill" objectFit="cover" />
+      <div
+        className="absolute inset-0 transition-opacity duration-1000 "
+        style={{ opacity }}
+      >
+        <Image
+          src={images[currentImage]}
+          alt="Background image"
+          layout="fill"
+          objectFit="cover"
+        />
       </div>
       {children}
     </div>
