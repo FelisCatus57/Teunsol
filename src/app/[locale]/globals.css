@@ -11,6 +11,24 @@ body {
   overflow-x: hidden;
 }
 
+@media (max-width: 1024px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 640px) {
+  html {
+    font-size: 12px;
+  }
+}
+
 .title-text-overflow {
   text-overflow: ellipsis;
   overflow: hidden;
