@@ -47,7 +47,7 @@ export default function BackgroundImage({
   return (
     <div className="relative w-full h-full overflow-hidden">
       <div
-        className="absolute inset-0 transition-opacity duration-1000 "
+        className="absolute inset-0 transition-opacity duration-1000  "
         style={{ opacity }}
       >
         <Image

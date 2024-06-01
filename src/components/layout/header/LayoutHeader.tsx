@@ -4,7 +4,7 @@ import BackgroundImage from './backgroundImage/backgroundImage';
 import Navbar from './navbar/navbar';
 import Logo from './logo/logo';
 import TransLocale from './transLocale/transLocale';
-import HamburgerMenu from '../hamburgerMenu/hamburgerMenu';
+import HamburgerMenu from './hamburgerMenu/hamburgerMenu';
 
 export default function LayoutHeader() {
   const header = useTranslations('Header');
