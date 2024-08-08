@@ -9,12 +9,15 @@ phases:
     commands:
       - echo Build Started on `date`
       - npm run build
+      - npm run export
   post_build:
     commands:
+      - echo Uploading to S3 ...
       - aws s3 cp --recursive ./out s3://$BUCKET_NAME/
-      - aws s3 cp --cache-control="max-age=0, no-cache, no-store, must-revalidate" ./out/index.html s3://$BUCKET_NAME/
-      #- aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION_ID --paths /index.html
+      - echo Invalidating CloudFront cache ...
+    #  - aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION_ID --paths "/*"
+
 artifacts:
   files:
     - '**/*'
-  base-directory: 'out'
+  base-directory: '.next'
