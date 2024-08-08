@@ -15,10 +15,10 @@ export default function Home() {
       <main>
         <Contents1 />
         <Contents2 />
-        <Contents3 />
+        {/* <Contents3 />
         <Contents4 />
         <Contents5 />
-        <Contents6 />
+        <Contents6 /> */}
       </main>
     </>
   );

@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 
 export default function BackgroundImage({
   children,
@@ -44,8 +45,14 @@ export default function BackgroundImage({
     };
   }, [opacity, nextImage, images.length]);
 
+  const pathname = usePathname();
+  const isMainPage =
+    pathname === '/' || pathname === '/ko' || pathname === '/en';
+
   return (
-    <div className="relative w-full h-full overflow-hidden">
+    <div
+      className={`relative w-full h-full  ${!isMainPage ? 'hidden' : ''} overflow-hidden`}
+    >
       <div
         className="absolute inset-0 transition-opacity duration-1000  "
         style={{ opacity }}

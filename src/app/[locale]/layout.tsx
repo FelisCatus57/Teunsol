@@ -5,6 +5,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { notFound } from 'next/navigation';
 import LayoutFooter from '@/components/layout/footer/LayoutFooter';
 import LayoutHeader from '@/components/layout/header/LayoutHeader';
+import Script from 'next/script';
 
 const notoSansKr = Noto_Sans_KR({
   weight: ['500'],
@@ -15,6 +16,12 @@ const notoSansJp = Noto_Sans_JP({
   weight: ['500'],
   subsets: ['latin'],
 });
+declare global {
+  interface Window {
+    Kakao: any;
+  }
+}
+export const kakaoKey = process.env.NEXT_PUBLIC_KAKAO_KEY;
 
 export const metadata: Metadata = {
   title: 'Teunsol International',
@@ -45,6 +52,7 @@ export default async function LocaleLayout({
     console.error('Failed to load messages:', error);
     notFound();
   }
+
   return (
     <html lang={locale}>
       <head>
@@ -54,6 +62,11 @@ export default async function LocaleLayout({
         />
       </head>
       <body className={fontClass}>
+        {/* <Script
+          type="text/javascript"
+          src={`//dapi.kakao.com/v2/maps/sdk.js?appkey=${process.env.NEXT_PUBLIC_KAKAO_KEY}&libraries=services,clusterer&autoload=false`}
+          strategy="beforeInteractive"
+        /> */}
         <NextIntlClientProvider locale={locale} messages={messages}>
           <LayoutHeader />
           {children}
