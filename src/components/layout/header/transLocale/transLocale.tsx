@@ -15,14 +15,18 @@ export default function TransLocale() {
             className="absolute right-20 text-sm md:text-base lg:right-10 cursor-pointer"
             href="/en"
           >
-            Eng
+            <div className="rounded-3xl text-sm px-3 py-1 bg-slate-700 text-white">
+              English
+            </div>
           </Link>
         ) : (
           <Link
-            className="absolute right-20 text-sm md:text-base lg:right-10 cursor-pointer "
+            className="absolute right-20  md:text-base lg:right-10 cursor-pointer "
             href="/ko"
           >
-            한국어
+            <div className="rounded-3xl text-sm px-3 py-1 bg-slate-700 text-white">
+              한국어
+            </div>
           </Link>
         )}
       </>
