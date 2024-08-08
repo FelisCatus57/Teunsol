@@ -1,4 +1,4 @@
-// File: C:\Users\ya551\Desktop\teunsol\my-app\src\app\[locale]\consultation\page.tsx
+// File: C:\Users\scorv\github\teunsol-site\src\app\[locale]\consultation\page.tsx
 import * as entry from '../../../../../src/app/[locale]/consultation/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

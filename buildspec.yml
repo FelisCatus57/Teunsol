@@ -1,24 +1,15 @@
 version: 0.2
 
 phases:
-  install:
-    runtime-versions:
-      nodejs: 22      # 사용하려는 Node.js의 버전을 명시하세요.
-    commands:
-      - echo Installing source NPM dependencies...
-      - npm install
-
   pre_build:
-    commands:
-      - echo Pre-build phase...
-
+     commands:
+        - npm install
   build:
-    commands:
-      - echo Build started on `date`
-      - npm run build
-      - echo Build completed on `date`
+     commands:
+        - npm run build
 
-  post_build:
-    commands:
-      - echo Starting the application...
-      - npm start
+artifacts:
+  files:
+     - "**/*"
+  discard-paths: no
+  base-directory: build
