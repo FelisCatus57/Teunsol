@@ -9,7 +9,6 @@ phases:
     commands:
       - echo Build Started on `date`
       - npm run build
-      - npm run export
   post_build:
     commands:
       - echo Uploading to S3 ...
