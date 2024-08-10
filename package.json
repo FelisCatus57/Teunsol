@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "aws-amplify": "^6.5.0",
     "dotenv": "^16.4.5",
     "next": "^14.2.3",
     "next-intl": "^3.13.0",
@@ -21,11 +22,17 @@
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
+    "@aws-amplify/backend": "^1.0.4",
+    "@aws-amplify/backend-cli": "^1.2.2",
     "@svgr/webpack": "^8.1.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "@types/react-slick": "^0.23.13",
+    "aws-cdk": "^2.151.0",
+    "aws-cdk-lib": "^2.151.0",
+    "constructs": "^10.3.0",
+    "esbuild": "^0.23.0",
     "eslint": "^8",
     "eslint-config-next": "14.2.3",
     "eslint-config-prettier": "^9.1.0",
@@ -33,6 +40,7 @@
     "postcss": "^8",
     "prettier": "^3.2.5",
     "tailwindcss": "^3.4.1",
-    "typescript": "^5"
+    "tsx": "^4.17.0",
+    "typescript": "^5.5.4"
   }
 }
