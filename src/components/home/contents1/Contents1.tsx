@@ -123,7 +123,7 @@ export default function Contents1() {
               : 'opacity-0 translate-y-8'
           }`}
         >
-          <span>Steel</span>
+          <span>Teunsol</span>
         </footer>
       </div>
     </section>
