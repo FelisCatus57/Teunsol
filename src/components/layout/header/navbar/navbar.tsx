@@ -21,12 +21,12 @@ export default function Navbar({ children }: { children: React.ReactNode }) {
   return (
     <>
       <nav
-        className={`h-16 md:h-20 w-screen fixed top-0 flex justify-center items-center transition-all duration-300 ease-in-out text-lg ${
+        className={` h-16 md:h-20 w-screen fixed top-0 flex justify-center items-center transition-all duration-300 ease-in-out text-lg ${
           isScrolled
             ? 'bg-white text-black shadow-lg'
             : isMainPage
               ? 'bg-black bg-opacity-15 text-white'
-              : 'bg-gray-600 text-white'
+              : 'bg-white text-black shadow-lg'
         }`}
       >
         {children}

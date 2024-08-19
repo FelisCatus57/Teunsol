@@ -22,7 +22,7 @@ export default function LayoutHeader() {
   return (
     <>
       {/* 헤더 */}
-      <header className={`w-screen  ${headerHeight} relative z-30 `}>
+      <header className={`w-screen  ${headerHeight} relative z-30  `}>
         {/* 배경 이미지 및 텍스트 */}
         <BackgroundImage>
           <div className="absolute inset-0 flex items-center justify-center mb-12 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.5)]">
@@ -50,7 +50,9 @@ export default function LayoutHeader() {
         {/* 네비게이션 */}
         <Navbar>
           {/* 로고 */}
+
           <Logo />
+
           {/* 네비게이션 메뉴 */}
           <div className="hidden lg:flex w-[60%] justify-between">
             <span className="cursor-pointer">{header('Nav1')}</span>
