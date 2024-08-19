@@ -9,7 +9,8 @@ export default function Consultation() {
   return (
     <div className="w-full pb-44">
       {/* 배너 이미지 */}
-      <div className="relative w-full h-[25rem] -mt-14">
+
+      <div className="relative w-full h-[25rem] ">
         <Image
           src={'/image/background/메인배경1.jpg'} // 배너 이미지 파일 경로
           alt="Banner"
