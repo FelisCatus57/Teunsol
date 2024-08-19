@@ -5,11 +5,15 @@ import BlackKlogo from '../../../../../public/image/svg/NonCC(all).svg'; //NonCC
 import BlackElogo from '../../../../../public/image/svg/NonCC(en).svg';
 import WhiteKlogo from '../../../../../public/image/svg/WTCC(all).svg';
 import WhiteElogo from '../../../../../public/image/svg/WTCC(en).svg';
-import { useParams } from 'next/navigation';
+import { useParams, usePathname } from 'next/navigation';
+import Link from 'next/link';
 
 export default function Logo() {
   const params = useParams<{ locale: string }>();
   const locale = params.locale;
+  const pathname = usePathname();
+  const isMainPage =
+    pathname === '/' || pathname === '/ko' || pathname === '/en';
 
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -17,32 +21,44 @@ export default function Logo() {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
     };
-    window.addEventListener('scroll', handleScroll);
+    if (isMainPage) {
+      window.addEventListener('scroll', handleScroll);
+    }
 
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+    return () => {
+      if (isMainPage) {
+        window.removeEventListener('scroll', handleScroll);
+      }
+    };
+  }, [isMainPage]);
 
   return (
     <>
-      {isScrolled ? (
-        // 스크롤이 true인 경우
+      <Link
+        href={`/${locale}`}
+        className="absolute left-2 w-32 md:left-10 md:w-40"
+      >
+        {isMainPage ? (
+          isScrolled ? (
+            // 스크롤이 true인 경우
+            locale === 'ko' ? (
+              <BlackKlogo />
+            ) : (
+              <BlackElogo />
+            )
+          ) : // 스크롤이 false인 경우
+          locale === 'ko' ? (
+            <WhiteKlogo fill="#FFFFFF" />
+          ) : (
+            <WhiteElogo fill="#FFFFFF" />
+          )
+        ) : // 메인 페이지가 아닌 경우 항상 블랙 로고 표시
         locale === 'ko' ? (
-          <BlackKlogo className="absolute left-2 w-32 md:left-10 md:w-40" />
+          <BlackKlogo />
         ) : (
-          <BlackElogo className="absolute left-2 w-32 md:left-10 md:w-40" />
-        )
-      ) : // 스크롤이 false인 경우
-      locale === 'ko' ? (
-        <WhiteKlogo
-          fill="#FFFFFF"
-          className="absolute left-2 w-32 md:left-10 md:w-40"
-        />
-      ) : (
-        <WhiteElogo
-          fill="#FFFFFF"
-          className="absolute left-2 w-32 md:left-10 md:w-40"
-        />
-      )}
+          <BlackElogo />
+        )}
+      </Link>
     </>
   );
 }
