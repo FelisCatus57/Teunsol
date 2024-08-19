@@ -18,11 +18,13 @@ export default function LayoutHeader() {
   const isMainPage =
     pathname === '/' || pathname === '/ko' || pathname === '/en';
 
-  const headerHeight = isMainPage ? 'h-[60vh] lg:h-[100vh]' : 'h-[10vh]';
+  const headerHeight = isMainPage ? 'h-[60vh] lg:h-[100vh]' : 'h-16 md:h-20 ';
   return (
     <>
       {/* 헤더 */}
-      <header className={`w-screen  ${headerHeight} relative z-30  `}>
+      <header
+        className={`w-screen  ${headerHeight} relative z-30 bg-slate-400 `}
+      >
         {/* 배경 이미지 및 텍스트 */}
         <BackgroundImage>
           <div className="absolute inset-0 flex items-center justify-center mb-12 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.5)]">
