@@ -22,9 +22,7 @@ export default function LayoutHeader() {
   return (
     <>
       {/* 헤더 */}
-      <header
-        className={`w-screen  ${headerHeight} relative z-30 bg-slate-400 `}
-      >
+      <header className={`w-screen  ${headerHeight} relative z-30  `}>
         {/* 배경 이미지 및 텍스트 */}
         <BackgroundImage>
           <div className="absolute inset-0 flex items-center justify-center mb-12 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.5)]">
@@ -66,7 +64,13 @@ export default function LayoutHeader() {
               </Link>
             )}
             <span className="cursor-pointer">{header('Nav3')}</span>
-            <span className="cursor-pointer">{header('Nav4')}</span>
+            {pathname === `/${locale}/copyright` ? (
+              <span className="cursor-pointer">{header('Nav4')}</span>
+            ) : (
+              <Link href={`/${locale}/copyright`}>
+                <span className="cursor-pointer">{header('Nav4')}</span>
+              </Link>
+            )}
           </div>
           {/* 언어 변경 */}
           <TransLocale />

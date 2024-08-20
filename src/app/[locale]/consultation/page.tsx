@@ -12,7 +12,7 @@ export default function Consultation() {
 
       <div className="relative w-full h-[25rem] ">
         <Image
-          src={'/image/background/메인배경1.jpg'} // 배너 이미지 파일 경로
+          src={'/image/background/메인배경1.jpg'}
           alt="Banner"
           layout="fill"
           objectFit="cover"
