@@ -55,7 +55,13 @@ export default function LayoutHeader() {
 
           {/* 네비게이션 메뉴 */}
           <div className="hidden lg:flex w-[60%] justify-between">
-            <span className="cursor-pointer">{header('Nav1')}</span>
+            {pathname === `/${locale}` ? (
+              <span className="cursor-pointer">{header('Nav1')}</span>
+            ) : (
+              <Link href={`/${locale}`}>
+                <span className="cursor-pointer">{header('Nav1')}</span>
+              </Link>
+            )}
             {pathname === `/${locale}/consultation` ? (
               <span className="cursor-pointer">{header('Nav2')}</span>
             ) : (
@@ -63,7 +69,13 @@ export default function LayoutHeader() {
                 <span className="cursor-pointer">{header('Nav2')}</span>
               </Link>
             )}
-            <span className="cursor-pointer">{header('Nav3')}</span>
+            {pathname === `/${locale}/gallery` ? (
+              <span className="cursor-pointer">{header('Nav3')}</span>
+            ) : (
+              <Link href={`/${locale}/gallery`}>
+                <span className="cursor-pointer">{header('Nav3')}</span>
+              </Link>
+            )}
             {pathname === `/${locale}/copyright` ? (
               <span className="cursor-pointer">{header('Nav4')}</span>
             ) : (
