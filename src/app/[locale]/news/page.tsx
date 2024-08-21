@@ -11,6 +11,7 @@ export default function News() {
   return (
     <div className="w-full pb-44 flex flex-col items-center bg-[#D9D9D980]">
       {/* 배너 이미지 */}
+      
       <div className="relative w-full h-[15rem] ">
         <Image
           src={'/image/background/메인배경1.jpg'}

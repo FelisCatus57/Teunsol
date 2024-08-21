@@ -71,6 +71,13 @@ export default function LayoutHeader() {
                 <span className="cursor-pointer">{header('Nav4')}</span>
               </Link>
             )}
+            {pathname === `/${locale}/news` ? (
+              <span className="cursor-pointer">{header('Nav5')}</span>
+            ) : (
+              <Link href={`/${locale}/news`}>
+                <span className="cursor-pointer">{header('Nav5')}</span>
+              </Link>
+            )}
           </div>
           {/* 언어 변경 */}
           <TransLocale />
