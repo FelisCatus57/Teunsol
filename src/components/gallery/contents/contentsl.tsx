@@ -1,6 +1,7 @@
 'use client';
 import Image from 'next/image';
 import { useState } from 'react';
+import { useTranslations } from 'next-intl';
 
 export default function Contents(): JSX.Element {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,7 +10,7 @@ export default function Contents(): JSX.Element {
   const itemsPerPage = 16; // 페이지당 표시할 슬라이드 수
   const slides = [
     1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21,
-    22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33,
+    22, 23, 24, 25, 26, 27, 28, 29
   ]; // 전체 슬라이드
   const totalPages = Math.ceil(slides.length / itemsPerPage);
 
@@ -34,6 +35,8 @@ export default function Contents(): JSX.Element {
     currentPage * itemsPerPage,
   );
 
+  const body = useTranslations('Gallery');
+
   return (
     <>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-14 px-20">
@@ -45,7 +48,7 @@ export default function Contents(): JSX.Element {
             >
               <div className="relative w-full mb-4 h-[80%]">
                 <Image
-                  src="/image/home/contents2/img1.jpg"
+                  src={`/image/gallery/photo (${index}).jpg`}
                   alt="news"
                   layout="fill"
                   objectFit="cover"
@@ -53,7 +56,7 @@ export default function Contents(): JSX.Element {
               </div>
 
               <span className="mb-4 text-lg lg:text-xl text-black max-h-20 title-text-overflow text-center">
-                사진제목{index}
+                {body(`content${index}.tilte`)}
               </span>
               <span className="mb-4 text-sm lg:text-base text-gray-500 contents-text-overflow text-center">
                 사진 부가 설명
@@ -104,9 +107,9 @@ export default function Contents(): JSX.Element {
               </div>
               <div className="lg:pl-4 flex flex-col justify-center lg:w-1/2">
                 <h3 className="text-lg font-medium leading-6 text-gray-900 mt-6 lg:mt-0">
-                  사진{selectedSlide}
+                {body(`content${selectedSlide}.tilte`)}
                 </h3>
-                <p className="mt-2 text-sm text-gray-500">사진설명</p>
+                <p className="mt-2 text-sm text-gray-500">{body(`content${selectedSlide}.sub`)}</p>
               </div>
             </div>
           </div>
