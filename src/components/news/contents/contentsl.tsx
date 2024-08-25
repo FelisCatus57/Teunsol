@@ -36,9 +36,9 @@ export default function Contents(): JSX.Element {
 
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-14 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-14">
         {currentSlides.map((index) => (
-          <div key={index} className="mb-3 bg-white ">
+          <div key={index} className="mb-3 bg-white p-2">
             <div
               className="h-[21.875rem] lg:h-[25.063rem] flex flex-col cursor-pointer hover:bg-gray-100"
               onClick={() => openModal(index)}
