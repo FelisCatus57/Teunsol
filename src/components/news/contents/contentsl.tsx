@@ -1,6 +1,7 @@
 'use client';
 import Image from 'next/image';
 import { useState } from 'react';
+import { useTranslations } from 'next-intl';
 
 export default function Contents(): JSX.Element {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,8 +9,7 @@ export default function Contents(): JSX.Element {
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 8; // 페이지당 표시할 슬라이드 수
   const slides = [
-    1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21,
-    22,
+    1, 2, 3, 4, 5, 6, 7, 8, 9, 10
   ]; // 전체 슬라이드
   const totalPages = Math.ceil(slides.length / itemsPerPage);
 
@@ -34,6 +34,8 @@ export default function Contents(): JSX.Element {
     currentPage * itemsPerPage,
   );
 
+  const body = useTranslations('News');
+
   return (
     <>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-14">
@@ -45,7 +47,7 @@ export default function Contents(): JSX.Element {
             >
               <div className="relative w-full mb-4 h-[7.5rem]">
                 <Image
-                  src="/image/home/contents2/img1.jpg"
+                  src={`/image/news/img (${index}).jpg`}
                   alt="news"
                   layout="fill"
                   objectFit="cover"
@@ -55,16 +57,13 @@ export default function Contents(): JSX.Element {
                 NEWS
               </span>
               <span className="mb-4 text-lg lg:text-xl text-black max-h-20 title-text-overflow">
-                뉴스 타이틀입니다.{index}
+                {body(`content${index}.title`)}
               </span>
               <span className="mb-4 text-sm lg:text-base text-gray-500 contents-text-overflow">
-                뉴스 컨텐츠입니다... 뉴스 컨텐츠입니다... 뉴스 컨텐츠입니다...
-                뉴스 컨텐츠입니다... 뉴스 컨텐츠입니다... 뉴스 컨텐츠입니다...
-                뉴스 컨텐츠입니다... 뉴스 컨텐츠입니다... 뉴스 컨텐츠입니다...
-                뉴스 컨텐츠입니다...
+                {body(`content${index}.sub`)}
               </span>
               <span className="absolute text-sm lg:text-base text-gray-600 bottom-0 contents-text-overflow">
-                2024-05-14
+              {body(`content${index}.date`)}
               </span>
             </div>
           </div>
@@ -104,7 +103,7 @@ export default function Contents(): JSX.Element {
             <div className="flex flex-col lg:flex-row h-full">
               <div className="relative w-full lg:w-1/2 h-1/2 lg:h-full">
                 <Image
-                  src="/image/home/contents2/img1.jpg"
+                  src={`/image/news/img (${selectedSlide}).jpg`}
                   alt="news"
                   layout="fill"
                   objectFit="cover"
@@ -112,13 +111,10 @@ export default function Contents(): JSX.Element {
               </div>
               <div className="lg:pl-4 flex flex-col justify-center lg:w-1/2">
                 <h3 className="text-lg font-medium leading-6 text-gray-900 mt-6 lg:mt-0">
-                  뉴스 타이틀입니다.{selectedSlide}
+                {body(`content${selectedSlide}.title`)}
                 </h3>
                 <p className="mt-2 text-sm text-gray-500">
-                  뉴스 컨텐츠입니다... 뉴스 컨텐츠입니다... 뉴스 컨텐츠입니다...
-                  뉴스 컨텐츠입니다... 뉴스 컨텐츠입니다... 뉴스 컨텐츠입니다...
-                  뉴스 컨텐츠입니다... 뉴스 컨텐츠입니다... 뉴스 컨텐츠입니다...
-                  뉴스 컨텐츠입니다...
+                {body(`content${selectedSlide}.sub`)}
                 </p>
               </div>
             </div>

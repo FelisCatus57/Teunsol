@@ -58,129 +58,179 @@
   },
   "News": {
     "Text1": "NEWS",
-    "Text2": "삶의 가치를 높이는 기업, 튼솔이 언제, 어디서나 함께하고 있습니다."
+    "Text2": "삶의 가치를 높이는 기업, 튼솔이 언제, 어디서나 함께하고 있습니다.",
+    "content1": {
+      "title": "오스트리아 ME와의 MOU 체결",
+      "sub": "sub.",
+      "date": "2020-01-01"
+    },
+    "content2": {
+      "title": "title",
+      "sub": "sub.",
+      "date": "2020-01-01"
+    },
+    "content3": {
+      "title": "title",
+      "sub": "sub.",
+      "date": "2020-01-01"
+    },
+    "content4": {
+      "title": "title",
+      "sub": "sub.",
+      "date": "2020-01-01"
+    },
+    "content5": {
+      "title": "title",
+      "sub": "sub.",
+      "date": "2020-01-01"
+    },
+    "content6": {
+      "title": "title",
+      "sub": "sub.",
+      "date": "2020-01-01"
+    },
+    "content7": {
+      "title": "title",
+      "sub": "sub.",
+      "date": "2020-01-01"
+    },
+    "content8": {
+      "title": "title",
+      "sub": "sub.",
+      "date": "2020-01-01"
+    },
+    "content9": {
+      "title": "title",
+      "sub": "sub.",
+      "date": "2020-01-01"
+    },
+    "content10": {
+      "title": "title",
+      "sub": "sub.",
+      "date": "2020-01-01"
+    }
   },
   "Gallery": {
     "Text1": "GALLERY",
     "Text2": "삶의 가치를 높이는 기업, 튼솔이 언제, 어디서나 함께하고 있습니다.",
     "content1": {
-      "tilte": "tilet",
+      "title": "title",
       "sub": "sub."
     },
     "content2": {
-      "tilte": "tilet",
+      "title": "title",
       "sub": "sub."
     },
     "content3": {
-      "tilte": "tilet",
+      "title": "title",
       "sub": "sub."
     },
     "content4": {
-      "tilte": "tilet",
+      "title": "title",
       "sub": "sub."
     },
     "content5": {
-      "tilte": "tilet",
+      "title": "title",
       "sub": "sub."
     },
     "content6": {
-      "tilte": "tilet",
+      "title": "title",
       "sub": "sub."
     },
     "content7": {
-      "tilte": "tilet",
+      "title": "title",
       "sub": "sub."
     },
     "content8": {
-      "tilte": "tilet",
+      "title": "title",
       "sub": "sub."
     },
     "content9": {
-      "tilte": "tilet",
+      "title": "title",
       "sub": "sub."
     },
     "content10": {
-      "tilte": "tilet",
+      "title": "title",
       "sub": "sub."
     },
     "content11": {
-      "tilte": "tilet",
+      "title": "title",
       "sub": "sub."
     },
     "content12": {
-      "tilte": "tilet",
+      "title": "title",
       "sub": "sub."
     },
     "content13": {
-      "tilte": "tilet",
+      "title": "title",
       "sub": "sub."
     },
     "content14": {
-      "tilte": "tilet",
+      "title": "title",
       "sub": "sub."
     },
     "content15": {
-      "tilte": "tilet",
+      "title": "title",
       "sub": "sub."
     },
     "content16": {
-      "tilte": "tilet",
+      "title": "title",
       "sub": "sub."
     },
     "content17": {
-      "tilte": "tilet",
+      "title": "title",
       "sub": "sub."
     },
     "content18": {
-      "tilte": "tilet",
+      "title": "title",
       "sub": "sub."
     },
     "content19": {
-      "tilte": "tilet",
+      "title": "title",
       "sub": "sub."
     },
     "content20": {
-      "tilte": "tilet",
+      "title": "title",
       "sub": "sub."
     },
     "content21": {
-      "tilte": "tilet",
+      "title": "title",
       "sub": "sub."
     },
     "content22": {
-      "tilte": "tilet",
+      "title": "title",
       "sub": "sub."
     },
     "content23": {
-      "tilte": "tilet",
+      "title": "title",
       "sub": "sub."
     },
     "content24": {
-      "tilte": "tilet",
+      "title": "title",
       "sub": "sub."
     },
     "content25": {
-      "tilte": "tilet",
+      "title": "title",
       "sub": "sub."
     },
     "content26": {
-      "tilte": "tilet",
+      "title": "title",
       "sub": "sub."
     },
     "content27": {
-      "tilte": "tilet",
+      "title": "title",
       "sub": "sub."
     },
     "content28": {
-      "tilte": "tilet",
+      "title": "title",
       "sub": "sub."
     },
     "content29": {
-      "tilte": "tilet",
+      "title": "title",
       "sub": "sub."
     },
     "content30": {
-      "tilte": "tilet",
+      "title": "title",
       "sub": "sub."
     }
   }

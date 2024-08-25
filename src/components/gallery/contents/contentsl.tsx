@@ -48,7 +48,7 @@ export default function Contents(): JSX.Element {
             >
               <div className="relative w-full mb-4 h-[80%]">
                 <Image
-                  src={`/image/gallery/photo (${index}).jpg`}
+                  src={`/image/gallery/img (${index}).jpg`}
                   alt="news"
                   layout="fill"
                   objectFit="cover"
@@ -56,7 +56,7 @@ export default function Contents(): JSX.Element {
               </div>
 
               <span className="mb-4 text-lg lg:text-xl text-black max-h-20 title-text-overflow text-center">
-                {body(`content${index}.tilte`)}
+                {body(`content${index}.title`)}
               </span>
               <span className="mb-4 text-sm lg:text-base text-gray-500 contents-text-overflow text-center">
                 사진 부가 설명
@@ -107,7 +107,7 @@ export default function Contents(): JSX.Element {
               </div>
               <div className="lg:pl-4 flex flex-col justify-center lg:w-1/2">
                 <h3 className="text-lg font-medium leading-6 text-gray-900 mt-6 lg:mt-0">
-                {body(`content${selectedSlide}.tilte`)}
+                  {body(`content${selectedSlide}.title`)}
                 </h3>
                 <p className="mt-2 text-sm text-gray-500">{body(`content${selectedSlide}.sub`)}</p>
               </div>
