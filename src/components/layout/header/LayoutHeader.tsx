@@ -76,7 +76,7 @@ export default function LayoutHeader() {
                 <span className="cursor-pointer">{header('Nav3')}</span>
               </Link>
             )}
-            {pathname === `/${locale}/copyright` ? (
+            {pathname === `/${locale}c` ? (
               <span className="cursor-pointer">{header('Nav4')}</span>
             ) : (
               <Link href={`/${locale}/copyright`}>
