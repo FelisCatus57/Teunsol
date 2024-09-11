@@ -57,11 +57,11 @@ export default function Contents1() {
   }, [count, isIntersecting]);
 
   return (
-    <section className="h-[41.75rem] flex flex-col lg:flex-row">
+    <section className="h-[30rem] flex flex-col lg:flex-row">
       {/* 왼쪽 컨텐츠 */}
       <div
         ref={leftSectionRef}
-        className="relative flex flex-col items-center justify-center w-full h-1/2 lg:h-full lg:w-1/2 lg:pb-16"
+        className="relative flex flex-col items-center justify-center w-full h-1/2 lg:h-full lg:w-1/2"
       >
         <Image
           src="/image/home/contents1/img1.jpg"
@@ -69,21 +69,10 @@ export default function Contents1() {
           layout="fill"
           objectFit="cover"
         />
-        <div className=" absolute flex flex-col justify-center items-center w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
-          <header className="lg:mb-24 text-3xl lg:text-5xl text-white">
-            Uzbekistan Tour & Business
-          </header>
+        <div className='bg-black bg-opacity-50 w-full h-full absolute'/>
+        
+        <div className=" mb-[20%] flex flex-col justify-center items-center w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.9)]">
           <LeftText1 />
-          <div className="flex justify-between w-3/6">
-            <div className="flex flex-col items-center justify-center">
-              <span className="text-4xl lg:text-6xl text-white ">{count}</span>
-              <LeftText2 />
-            </div>
-            <div className="flex flex-col items-center justify-center">
-              <span className="text-4xl lg:text-6xl text-white ">{count}</span>
-              {/*<LeftText3 /> */}
-            </div>
-          </div>
         </div>
       </div>
       {/* 오른쪽 컨텐츠 */}
@@ -97,8 +86,8 @@ export default function Contents1() {
           layout="fill"
           objectFit="cover"
         />
-        <header className="w-full h-1/3 flex justify-center items-center text-3xl lg:text-5xl text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
-          Press tooling buisness for the automotive
+        <header className="ml-[5%] mb-[12%] w-full  flex justify-center items-center text-3xl lg:text-5xl text-white drop-shadow-lg">
+          <span>Press tooling buisness for the automotive</span>
         </header>
         <div
           className={`w-full h-[45%] relative transition-all duration-700 ease-out transform ${
@@ -116,15 +105,6 @@ export default function Contents1() {
             />*/}
           </div>
         </div>
-        <footer
-          className={`w-full h-[22%] flex justify-center items-center text-2xl lg:text-3xl bg-white text-gray-600 transition-opacity duration-700 ease-out transform ${
-            isIntersecting
-              ? 'opacity-100 translate-y-0'
-              : 'opacity-0 translate-y-8'
-          }`}
-        >
-          <span>Teunsol</span>
-        </footer>
       </div>
     </section>
   );

@@ -4,6 +4,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
+import { useTranslations } from 'next-intl';
 import { SetStateAction, useState } from 'react';
 
 const PrevArrow = ({ onClick }: { onClick: () => void }) => (
@@ -67,6 +68,8 @@ export default function NewsCarousel(): JSX.Element {
     setSelectedSlide(null);
   };
 
+  const body = useTranslations('News');
+
   return (
     <>
       <Slider {...settings}>
@@ -79,9 +82,9 @@ export default function NewsCarousel(): JSX.Element {
               className="h-[21.875rem] lg:h-[25.063rem] flex flex-col cursor-pointer  hover:bg-gray-100 "
               onClick={() => openModal(index)}
             >
-              <div className="relative w-full mb-4 h-[7.5rem]">
+              <div className="relative w-full mb-4 h-[9.5rem]">
                 <Image
-                  src={`/image/home/contents2/img${index}.jpg`}
+                  src={`/image/news/img (${index}).jpg`}
                   alt="news"
                   layout="fill"
                   objectFit="cover"
@@ -91,16 +94,10 @@ export default function NewsCarousel(): JSX.Element {
                 NEWS
               </span>
               <span className="mb-4 text-lg lg:text-xl text-black max-h-20 title-text-overflow">
-                뉴스 타이틀입니다.{index}
+              {body(`content${index}.title`)}
               </span>
               <span className="mb-4 text-sm lg:text-base text-gray-500 contents-text-overflow">
-                뉴스 컨텐츠입니다... 뉴스 컨텐츠입니다... 뉴스 컨텐츠입니다...
-                뉴스 컨텐츠입니다... 뉴스 컨텐츠입니다... 뉴스 컨텐츠입니다...
-                뉴스 컨텐츠입니다... 뉴스 컨텐츠입니다... 뉴스 컨텐츠입니다...
-                뉴스 컨텐츠입니다...
-              </span>
-              <span className="absolute text-sm lg:text-base text-gray-600 bottom-0 contents-text-overflow">
-                2024-05-14
+                {body(`content${index}.sub`)}
               </span>
             </div>
           </div>
@@ -124,7 +121,7 @@ export default function NewsCarousel(): JSX.Element {
             <div className="flex flex-col lg:flex-row h-full">
               <div className="relative w-full lg:w-1/2 h-1/2 lg:h-full">
                 <Image
-                  src="/image/home/contents2/img1.jpg"
+                  src={`/image/news/img (${selectedSlide}).jpg`}
                   alt="news"
                   layout="fill"
                   objectFit="cover"
@@ -132,13 +129,10 @@ export default function NewsCarousel(): JSX.Element {
               </div>
               <div className="lg:pl-4 flex flex-col justify-center lg:w-1/2">
                 <h3 className="text-lg font-medium leading-6 text-gray-900 mt-6 lg:mt-0">
-                  뉴스 타이틀입니다.{selectedSlide}
+                  {body(`content${selectedSlide}.title`)} 
                 </h3>
                 <p className="mt-2 text-sm text-gray-500">
-                  뉴스 컨텐츠입니다... 뉴스 컨텐츠입니다... 뉴스 컨텐츠입니다...
-                  뉴스 컨텐츠입니다... 뉴스 컨텐츠입니다... 뉴스 컨텐츠입니다...
-                  뉴스 컨텐츠입니다... 뉴스 컨텐츠입니다... 뉴스 컨텐츠입니다...
-                  뉴스 컨텐츠입니다...
+                {body(`content${selectedSlide}.sub`)}
                 </p>
               </div>
             </div>
