@@ -13,14 +13,14 @@ export default function Home() {
       {/* 메인 */}
 
       <main>
-        {/*
+        
         <Contents1 />
         <Contents2 />
         <Contents3 />
         <Contents4 />
         <Contents5 />
         <Contents6 /> 
-        */}
+        
       </main>
     </>
   );

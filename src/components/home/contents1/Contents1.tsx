@@ -71,7 +71,7 @@ export default function Contents1() {
         />
         <div className=" absolute flex flex-col justify-center items-center w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
           <header className="lg:mb-24 text-3xl lg:text-5xl text-white">
-            TeunSol
+            Uzbekistan Tour & Business
           </header>
           <LeftText1 />
           <div className="flex justify-between w-3/6">
@@ -81,7 +81,7 @@ export default function Contents1() {
             </div>
             <div className="flex flex-col items-center justify-center">
               <span className="text-4xl lg:text-6xl text-white ">{count}</span>
-              <LeftText3 />
+              {/*<LeftText3 /> */}
             </div>
           </div>
         </div>
@@ -98,7 +98,7 @@ export default function Contents1() {
           objectFit="cover"
         />
         <header className="w-full h-1/3 flex justify-center items-center text-3xl lg:text-5xl text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
-          Business
+          Press tooling buisness for the automotive
         </header>
         <div
           className={`w-full h-[45%] relative transition-all duration-700 ease-out transform ${
@@ -108,12 +108,12 @@ export default function Contents1() {
           }`}
         >
           <div className="relative w-full h-full transition-transform duration-500 ease-in-out hover:scale-110">
-            <Image
+            {/*<Image
               src="/image/home/contents1/img3.jpg"
               alt="contents1"
               layout="fill"
               objectFit="cover"
-            />
+            />*/}
           </div>
         </div>
         <footer
