@@ -21,7 +21,7 @@
     "Text7": "www.teunsol.co.kr"
   },
   "MainBodyContents1": {
-    "Text1": "숫자로 보는",
+    "Text1": "우즈베키스탄 여행",
     "Text2": "튼솔",
     "Text3": "예시문구1",
     "Text4": "예시문구2"
@@ -60,54 +60,36 @@
     "Text1": "NEWS",
     "Text2": "삶의 가치를 높이는 기업, 튼솔이 언제, 어디서나 함께하고 있습니다.",
     "content1": {
-      "title": "우즈베키스탄 유아교육청의 MOU 체결",
-      "sub": "sub.",
-      "date": "2024"
+      "title": "우즈베키스탄 유아교육청",
+      "sub": "우즈베키스탄 유아교육청에서 MOU 체결."
     },
     "content2": {
-      "title": "title",
-      "sub": "sub.",
-      "date": "2020-01-01"
+      "title": "장학금 지원 사업",
+      "sub": "우즈베키스탄 사마르칸트 국립대와의 협업."
     },
     "content3": {
-      "title": "title",
-      "sub": "sub.",
-      "date": "2020-01-01"
+      "title": "여행사업부와의 MOU 체결",
+      "sub": "2021년. 사마르칸트 주 투자 및 여행사업부와의 MOU 체결. "
     },
     "content4": {
-      "title": "title",
-      "sub": "sub.",
-      "date": "2020-01-01"
+      "title": "사마르칸트 이주노동부와의 MOU 체결",
+      "sub": "사마르칸트에서 이주노동부와의 MOU 체결을 진행했습니다."
     },
     "content5": {
-      "title": "title",
-      "sub": "sub.",
-      "date": "2020-01-01"
+      "title": "현지 대형 여행사 SSST와의 MOU 체결",
+      "sub": "사마르칸트 현지 대형 여행사 SSST와의 MOU 체결. 2021년."
     },
     "content6": {
-      "title": "title",
-      "sub": "sub.",
-      "date": "2020-01-01"
+      "title": "신임 주함 우즈베키스탄 대사님 내외분과 함께.",
+      "sub": "2024년 8월. 우즈베키스탄 독립 33주년 및 한국과의 수교 32주년 행사 참석"
     },
     "content7": {
-      "title": "title",
-      "sub": "sub.",
-      "date": "2020-01-01"
+      "title": "사마르칸트 주정부 유아교육부와의 MOU 체결",
+      "sub": "2021년 사마르칸트 주정부 유아교육부와의 MOU 체결.."
     },
     "content8": {
       "title": "title",
-      "sub": "sub.",
-      "date": "2020-01-01"
-    },
-    "content9": {
-      "title": "title",
-      "sub": "sub.",
-      "date": "2020-01-01"
-    },
-    "content10": {
-      "title": "title",
-      "sub": "sub.",
-      "date": "2020-01-01"
+      "sub": "sub."
     }
   },
   "Gallery": {

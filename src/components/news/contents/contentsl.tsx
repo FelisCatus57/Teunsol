@@ -9,7 +9,7 @@ export default function Contents(): JSX.Element {
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 8; // 페이지당 표시할 슬라이드 수
   const slides = [
-    1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+    1, 2, 3, 4, 5, 6, 7
   ]; // 전체 슬라이드
   const totalPages = Math.ceil(slides.length / itemsPerPage);
 
@@ -45,7 +45,7 @@ export default function Contents(): JSX.Element {
               className="h-[21.875rem] lg:h-[25.063rem] flex flex-col cursor-pointer hover:bg-gray-100"
               onClick={() => openModal(index)}
             >
-              <div className="relative w-full mb-4 h-[7.5rem]">
+              <div className="relative w-full mb-4 h-[10.5rem]">
                 <Image
                   src={`/image/news/img (${index}).jpg`}
                   alt="news"
@@ -62,9 +62,7 @@ export default function Contents(): JSX.Element {
               <span className="mb-4 text-sm lg:text-base text-gray-500 contents-text-overflow">
                 {body(`content${index}.sub`)}
               </span>
-              <span className="absolute text-sm lg:text-base text-gray-600 bottom-0 contents-text-overflow">
-              {body(`content${index}.date`)}
-              </span>
+              
             </div>
           </div>
         ))}
