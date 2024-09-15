@@ -70,15 +70,21 @@ export default function Contents1() {
           objectFit="cover"
         />
         <div className='bg-black bg-opacity-50 w-full h-full absolute'/>
-        
-        <div className=" mb-[20%] flex flex-col justify-center items-center w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.9)]">
-          <LeftText1 />
-        </div>
+        <header className="ml-[5%] mb-[12%] w-full  flex justify-center items-center text-3xl lg:text-5xl text-white drop-shadow-lg">
+          <span>Uzbekistan Tour & Business</span>
+        </header>
+        <div
+          className={`w-full h-[45%] relative transition-all duration-700 ease-out transform ${
+            isIntersecting
+              ? 'opacity-100 translate-y-0'
+              : 'opacity-0 translate-y-10'
+          }`}
+        ></div>
       </div>
       {/* 오른쪽 컨텐츠 */}
       <div
         ref={rightSectionRef}
-        className="relative flex flex-col items-center justify-center w-full lg:w-1/2  h-1/2 lg:h-full overflow-hidden"
+        className="relative flex flex-col items-center justify-center w-full h-1/2 lg:h-full  lg:w-1/2 overflow-hidden"
       >
         <Image
           src="/image/home/contents1/img2.jpg"
@@ -96,14 +102,6 @@ export default function Contents1() {
               : 'opacity-0 translate-y-10'
           }`}
         >
-          <div className="relative w-full h-full transition-transform duration-500 ease-in-out hover:scale-110">
-            {/*<Image
-              src="/image/home/contents1/img3.jpg"
-              alt="contents1"
-              layout="fill"
-              objectFit="cover"
-            />*/}
-          </div>
         </div>
       </div>
     </section>
