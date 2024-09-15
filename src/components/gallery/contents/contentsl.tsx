@@ -59,7 +59,7 @@ export default function Contents(): JSX.Element {
                 {body(`content${index}.title`)}
               </span>
               <span className="mb-4 text-sm lg:text-base text-gray-500 contents-text-overflow text-center">
-                사진 부가 설명
+              {body(`content${index}.sub`)}
               </span>
             </div>
           </div>
@@ -98,8 +98,8 @@ export default function Contents(): JSX.Element {
             </button>
             <div className="flex flex-col lg:flex-row h-full">
               <div className="relative w-full lg:w-1/2 h-1/2 lg:h-full">
-                <Image
-                  src="/image/home/contents2/img1.jpg"
+              <Image
+                  src={`/image/gallery/img (${selectedSlide}).jpg`}
                   alt="news"
                   layout="fill"
                   objectFit="cover"
