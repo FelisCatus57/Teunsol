@@ -19,7 +19,7 @@ export default function Contents6() {
         <Text2 />
         <div className="flex justify-center items-center">
           <div className="z-10 flex justify-center items-center w-20 h-20 border-[3px] border-white rounded-full text-white text-base transition-all duration-500 group-hover:border-orange-500 group-hover:text-orange-500">
-            MORE
+            PPT
           </div>
         </div>
       </section>

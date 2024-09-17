@@ -14,7 +14,7 @@ export default function Home() {
       <main>
         <Contents1 />
         <Contents2 />
-        <Contents3 />      
+        <Contents3 />     
       </main>
     </>
   );
