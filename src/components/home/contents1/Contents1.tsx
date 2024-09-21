@@ -74,11 +74,11 @@ export default function Contents1() {
         />
         <div className="group bg-black bg-opacity-65 w-full h-full absolute"></div>
         <div className="group relative flex flex-col justify-center items-center w-full h-full transition-transform duration-500 ease-in-out hover:scale-110">
-          <header className="w-full flex justify-center items-center text-3xl lg:text-5xl text-white drop-shadow-lg">
-            <span>Uzbekistan Tour & Business</span>
+          <header className="w-full flex justify-center items-center text-3xl lg:text-4xl text-white drop-shadow-lg">
+            <span>Project magement for the tooling of Automotive</span>
           </header>
           <div className="z-10 mt-8 flex justify-center items-center w-20 h-20 border-[3px] border-white rounded-full text-white text-base transition-all duration-500 hover:border-orange-500 hover:text-orange-500">
-            PPT
+            Touch
           </div>
         </div>
         <div
@@ -100,7 +100,7 @@ export default function Contents1() {
           objectFit="cover"
         />
         <header className="w-full h-1/3 flex justify-center items-center text-3xl lg:text-5xl text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
-          Business
+          Uzbakistan Business and Tour
         </header>
         <div
           className={`w-full h-[45%] relative transition-all duration-700 ease-out transform ${isIntersecting
@@ -115,7 +115,7 @@ export default function Contents1() {
             : 'opacity-0 translate-y-8'
             }`}
         >
-          <span>Uzbekistan</span>
+          <span>어린이집 후원 및 교육기관 지원</span>
         </footer>
       </div>
     </section>
