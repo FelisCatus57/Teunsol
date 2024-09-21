@@ -64,7 +64,7 @@ export default function Contents1() {
       {/* 왼쪽 컨텐츠 */}
       <div
         ref={leftSectionRef}
-        className="relative flex flex-col items-center justify-center w-full h-1/2 lg:h-full lg:w-1/2"
+        className="relative flex flex-col items-center justify-center w-full h-1/2 lg:h-full lg:w-1/2 "
       >
         <Image
           src="/image/home/contents1/img1.jpg"
@@ -72,57 +72,52 @@ export default function Contents1() {
           layout="fill"
           objectFit="cover"
         />
-        <div className='bg-black bg-opacity-65 w-full h-full absolute'/>
-          <header className="ml-[0%] mt-[8%] w-full  flex justify-center items-center text-3xl lg:text-5xl text-white drop-shadow-lg">
+        <div className="group bg-black bg-opacity-65 w-full h-full absolute"></div>
+        <div className="group relative flex flex-col justify-center items-center w-full h-full transition-transform duration-500 ease-in-out hover:scale-110">
+          <header className="w-full flex justify-center items-center text-3xl lg:text-5xl text-white drop-shadow-lg">
             <span>Uzbekistan Tour & Business</span>
           </header>
-          <div className="z-10 mt-[10%] flex justify-center items-center w-20 h-20 border-[3px] border-white rounded-full text-white text-base transition-all duration-500 group-hover:border-orange-500 group-hover:text-orange-500">
+          <div className="z-10 mt-8 flex justify-center items-center w-20 h-20 border-[3px] border-white rounded-full text-white text-base transition-all duration-500 hover:border-orange-500 hover:text-orange-500">
             PPT
           </div>
+        </div>
         <div
-          className={`w-full h-[45%] relative transition-all duration-700 ease-out transform ${
-            isIntersecting
-              ? 'opacity-100 translate-y-0'
-              : 'opacity-0 translate-y-10'
-          }`}
+          className={`w-full h-[45%] relative transition-all duration-700 ease-out transform ${isIntersecting
+            ? 'opacity-100 translate-y-0'
+            : 'opacity-0 translate-y-10'
+            }`}
         ></div>
       </div>
       {/* 오른쪽 컨텐츠 */}
       <div
         ref={rightSectionRef}
-        className="relative flex flex-col items-center justify-center w-full h-1/2 lg:h-full  lg:w-1/2 overflow-hidden"
+        className="relative flex flex-col items-center justify-center w-full lg:w-1/2  h-1/2 lg:h-full overflow-hidden"
       >
-         <div className="h-[18.75rem] md:h-[23.75rem] w-screen flex justify-center items-center flex-col relative group overflow-hidden">
-        <div className="absolute w-full h-full transition-transform duration-1000 ease-in-out group-hover:scale-110">
-          <Image
-            src="/image/home/contents6/img1.jpg"
-            alt="contents6"
-            layout="fill"
-            objectFit="cover"
-          />
-        </div>
-        <div className="flex justify-center items-center">
-         
-        </div>
-      </div>
-        {/* <Image
+        <Image
           src="/image/home/contents1/img2.jpg"
           alt="contents1"
           layout="fill"
           objectFit="cover"
         />
-        <header className="ml-[0%] mb-[12%] w-full  flex justify-center items-center text-3xl lg:text-5xl text-white drop-shadow-lg">
-          <span>Press tooling buisness for the automotive</span>
+        <header className="w-full h-1/3 flex justify-center items-center text-3xl lg:text-5xl text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+          Business
         </header>
         <div
-          className={`w-full h-[45%] relative transition-all duration-700 ease-out transform ${
-            isIntersecting
-              ? 'opacity-100 translate-y-0'
-              : 'opacity-0 translate-y-10'
-          }`}
+          className={`w-full h-[45%] relative transition-all duration-700 ease-out transform ${isIntersecting
+            ? 'opacity-100 translate-y-0'
+            : 'opacity-0 translate-y-10'
+            }`}
         >
-        </div> */}
-      </div> 
+        </div>
+        <footer
+          className={`w-full h-[22%] flex justify-center items-center text-2xl lg:text-3xl bg-white text-gray-600 transition-opacity duration-700 ease-out transform ${isIntersecting
+            ? 'opacity-100 translate-y-0'
+            : 'opacity-0 translate-y-8'
+            }`}
+        >
+          <span>Uzbekistan</span>
+        </footer>
+      </div>
     </section>
   );
 }
