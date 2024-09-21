@@ -72,10 +72,13 @@ export default function Contents1() {
           layout="fill"
           objectFit="cover"
         />
-        <div className='bg-black bg-opacity-50 w-full h-full absolute'/>
-        <header className="ml-[5%] mb-[12%] w-full  flex justify-center items-center text-3xl lg:text-5xl text-white drop-shadow-lg">
-          <span>Uzbekistan Tour & Business</span>
-        </header>
+        <div className='bg-black bg-opacity-65 w-full h-full absolute'/>
+          <header className="ml-[0%] mt-[8%] w-full  flex justify-center items-center text-3xl lg:text-5xl text-white drop-shadow-lg">
+            <span>Uzbekistan Tour & Business</span>
+          </header>
+          <div className="z-10 mt-[10%] flex justify-center items-center w-20 h-20 border-[3px] border-white rounded-full text-white text-base transition-all duration-500 group-hover:border-orange-500 group-hover:text-orange-500">
+            PPT
+          </div>
         <div
           className={`w-full h-[45%] relative transition-all duration-700 ease-out transform ${
             isIntersecting
@@ -98,12 +101,8 @@ export default function Contents1() {
             objectFit="cover"
           />
         </div>
-        <Text1 />
-        <Text2 />
         <div className="flex justify-center items-center">
-          <div className="z-10 flex justify-center items-center w-20 h-20 border-[3px] border-white rounded-full text-white text-base transition-all duration-500 group-hover:border-orange-500 group-hover:text-orange-500">
-            PPT
-          </div>
+         
         </div>
       </div>
         {/* <Image
