@@ -1,9 +1,10 @@
 {
   "Header": {
     "Nav1": "Introduction",
-    "Nav2": "Consultation",
+    "Nav2": "Visit",
     "Nav3": "Gallery",
     "Nav4": "Copyright",
+    "Nav5": "News",
     "bannerText1": "We seek sustainable growth. We connect the world",
     "bannerText2-1": "at the center of it ",
     "bannerText2-2": "TeunSol",
@@ -11,7 +12,7 @@
     "bannerText3": "TEUNSOL IS THE CENTER OF PROGRESS."
   },
   "Footer": {
-    "Text1": "개인정보취급방침 | 이메일무단수집거부 | CONTACT US | B2B | 원료 | SCM",
+    "Text1": "개인정보취급방침 | 이메일무단수집거부 | CONTACT US",
     "Text2": "32, Pyeongdongsandan-ro 143beon-gil, Gwangsan-gu, Gwangju TEL : 010-2326-3466",
     "Text3": "담당자 : 한국인 - 한국어, English, French (010-2326-3466)",
     "Text4": "우즈벡인 - 한국어, Russian, Uzbek ,French",
@@ -41,14 +42,22 @@
     "Text2": "고객의 원할한 업무진행을 위해 최선을 다하겠습니다."
   },
   "Consultation": {
-    "Text1": "찾아오는길",
-    "Text2": "고객의 소리에 귀 기울이겠습니다.",
-    "Text3": "주소 및 대표전화",
-    "Text4": "광주 광산구 평동산단로143번길 32",
-    "Text5": "대표전화: 010-2326-3466",
-    "Text6": "고객의 소리에 귀 기울이겠습니다.",
-    "Text7": "대중교통안내",
-    "Text8": "카페역: 5호선 서대문역 1번출구",
-    "Text9": "버스: 서대문역사거리 정류장"
+    "Text1": "Directions",
+    "Text2": "We will listen to our customers.",
+    "Text3": "Address and main phone number",
+    "Text4": "32 Pyeongdongsandan-ro 143beon-gil, Gwangsan-gu, Gwangju",
+    "Text5": "Main phone number: 010-2326-3466",
+    "Text6": "We will listen to our customers.",
+    "Text7": "Public transportation information",
+    "Text8": "subway: Line 5 Seodaemun Station Exit 1",
+    "Text9": "Bus: Seodaemun Station Street stop"
+  },
+  "Copyright": {
+    "Text1": "로고",
+    "Text2": "삶의 가치를 높이는 기업, 튼솔이 언제, 어디서나 함께하고 있습니다."
+  },
+  "News": {
+    "Text1": "NEWS",
+    "Text2": "삶의 가치를 높이는 기업, 튼솔이 언제, 어디서나 함께하고 있습니다."
   }
 }

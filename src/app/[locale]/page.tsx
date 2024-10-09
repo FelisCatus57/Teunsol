@@ -11,14 +11,10 @@ export default function Home() {
   return (
     <>
       {/* 메인 */}
-
       <main>
         <Contents1 />
         <Contents2 />
-        {/* <Contents3 />
-        <Contents4 />
-        <Contents5 />
-        <Contents6 /> */}
+        <Contents3 />     
       </main>
     </>
   );

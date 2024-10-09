@@ -18,11 +18,11 @@ export default function LayoutHeader() {
   const isMainPage =
     pathname === '/' || pathname === '/ko' || pathname === '/en';
 
-  const headerHeight = isMainPage ? 'h-[60vh] lg:h-[100vh]' : 'h-[10vh]';
+  const headerHeight = isMainPage ? 'h-[60vh] lg:h-[100vh]' : 'h-16 md:h-20 ';
   return (
     <>
       {/* 헤더 */}
-      <header className={`w-screen  ${headerHeight} relative z-30 `}>
+      <header className={`w-screen  ${headerHeight} relative z-30  `}>
         {/* 배경 이미지 및 텍스트 */}
         <BackgroundImage>
           <div className="absolute inset-0 flex items-center justify-center mb-12 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.5)]">
@@ -50,10 +50,18 @@ export default function LayoutHeader() {
         {/* 네비게이션 */}
         <Navbar>
           {/* 로고 */}
+
           <Logo />
+
           {/* 네비게이션 메뉴 */}
           <div className="hidden lg:flex w-[60%] justify-between">
-            <span className="cursor-pointer">{header('Nav1')}</span>
+            {pathname === `/${locale}` ? (
+              <span className="cursor-pointer">{header('Nav1')}</span>
+            ) : (
+              <Link href={`/${locale}`}>
+                <span className="cursor-pointer">{header('Nav1')}</span>
+              </Link>
+            )}
             {pathname === `/${locale}/consultation` ? (
               <span className="cursor-pointer">{header('Nav2')}</span>
             ) : (
@@ -61,8 +69,27 @@ export default function LayoutHeader() {
                 <span className="cursor-pointer">{header('Nav2')}</span>
               </Link>
             )}
-            <span className="cursor-pointer">{header('Nav3')}</span>
-            <span className="cursor-pointer">{header('Nav4')}</span>
+            {pathname === `/${locale}/gallery` ? (
+              <span className="cursor-pointer">{header('Nav3')}</span>
+            ) : (
+              <Link href={`/${locale}/gallery`}>
+                <span className="cursor-pointer">{header('Nav3')}</span>
+              </Link>
+            )}
+            {pathname === `/${locale}c` ? (
+              <span className="cursor-pointer">{header('Nav4')}</span>
+            ) : (
+              <Link href={`/${locale}/copyright`}>
+                <span className="cursor-pointer">{header('Nav4')}</span>
+              </Link>
+            )}
+            {pathname === `/${locale}/news` ? (
+              <span className="cursor-pointer">{header('Nav5')}</span>
+            ) : (
+              <Link href={`/${locale}/news`}>
+                <span className="cursor-pointer">{header('Nav5')}</span>
+              </Link>
+            )}
           </div>
           {/* 언어 변경 */}
           <TransLocale />

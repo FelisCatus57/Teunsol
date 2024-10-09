@@ -3,10 +3,16 @@
 import { useTranslations } from 'next-intl';
 import React, { useState } from 'react';
 import { RxHamburgerMenu } from 'react-icons/rx';
+import { useParams, usePathname } from 'next/navigation';
+import Link from 'next/link';
+
 
 export default function HamburgerMenu() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const header = useTranslations('Header');
+  const params = useParams<{ locale: string }>();
+  const locale = params.locale;
+  const pathname = usePathname();
 
   const toggleDropdown = () => {
     setDropdownOpen(!dropdownOpen);
@@ -43,26 +49,51 @@ export default function HamburgerMenu() {
             X
           </span>
         </div>
-        <div className="text-sm h-[6.7%] border-b-[1px] border-gray-700 flex items-center px-4 cursor-pointer ">
-          <span className="drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.5)]">
-            {header('Nav1')}
-          </span>
-        </div>
-        <div className="text-sm h-[6.7%] border-b-[1px] border-gray-700 flex items-center px-4 cursor-pointer ">
-          <span className="drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.5)]">
-            {header('Nav2')}
-          </span>
-        </div>
-        <div className="text-sm h-[6.7%] border-b-[1px] border-gray-700 flex items-center px-4 cursor-pointer  ">
-          <span className="drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.5)]">
-            {header('Nav3')}
-          </span>
-        </div>
-        <div className="text-sm h-[6.7%] border-b-[1px] border-gray-700 flex items-center px-4 cursor-pointer  ">
-          <span className="drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.5)]">
-            {header('Nav4')}
-          </span>
-        </div>
+          <div className="text-sm h-[6.7%] border-b-[1px] border-gray-700 flex items-center px-4 cursor-pointer ">
+            {pathname === `/${locale}` ? (
+              <span className="drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.5)]">{header('Nav1')}</span>
+            ) : (
+              <Link href={`/${locale}`}>
+                <span className="drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.5)]">{header('Nav1')}</span>
+              </Link>
+            )}
+          </div>      
+          <div className="text-sm h-[6.7%] border-b-[1px] border-gray-700 flex items-center px-4 cursor-pointer ">
+          {pathname === `/${locale}/consultation` ? (
+              <span className="drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.5)]">{header('Nav2')}</span>
+            ) : (
+              <Link href={`/${locale}/consultation`}>
+                <span className="drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.5)]">{header('Nav2')}</span>
+              </Link>
+            )}
+          </div>
+          <div className="text-sm h-[6.7%] border-b-[1px] border-gray-700 flex items-center px-4 cursor-pointer  ">
+          {pathname === `/${locale}/gallery` ? (
+              <span className="drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.5)]">{header('Nav3')}</span>
+            ) : (
+              <Link href={`/${locale}/gallery`}>
+                <span className="drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.5)]">{header('Nav3')}</span>
+              </Link>
+            )}
+          </div>
+          <div className="text-sm h-[6.7%] border-b-[1px] border-gray-700 flex items-center px-4 cursor-pointer  ">
+          {pathname === `/${locale}/copyright` ? (
+              <span className="drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.5)]">{header('Nav4')}</span>
+            ) : (
+              <Link href={`/${locale}/copyright`}>
+                <span className="drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.5)]">{header('Nav4')}</span>
+              </Link>
+            )}
+          </div>
+          <div className="text-sm h-[6.7%] border-b-[1px] border-gray-700 flex items-center px-4 cursor-pointer  ">      
+          {pathname === `/${locale}/news` ? (
+              <span className="drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.5)]">{header('Nav5')}</span>
+            ) : (
+              <Link href={`/${locale}/news`}>
+                <span className="drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.5)]">{header('Nav5')}</span>
+              </Link>
+            )}
+          </div>
       </div>
     </>
   );
