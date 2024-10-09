@@ -19,9 +19,7 @@ export default function KakaoMap() {
       }}
       level={3}
     >
-      <MapMarker position={{ lat: 33.55635, lng: 126.795841 }}>
-        <div style={{color:"#000"}}>Hello World!</div>
-      </MapMarker>
+      <MapMarker position={{ lat: 33.55635, lng: 126.795841 }}></MapMarker>
     </Map>
   );
 }
